@@ -100,6 +100,7 @@ html {
 #container {
   position: relative;
   top: 80px;
+  width: 100%;
   margin: auto;
   text-align: center; }
   #container .post {
@@ -111,6 +112,7 @@ html {
     padding: 18px;
     border: 6px solid #fefefe;
     margin: 0px;
+    width: 90%;
     margin-bottom: 12px;
     box-shadow: 0px 4px 16px #664444; }
     @media only screen and (min-width: 600px) and (max-width: 899px) {
@@ -120,7 +122,8 @@ html {
         margin-bottom: 12px; } }
     @media only screen and (min-width: 900px) {
       #container .post {
-        width: 350px;
+        width: 30%;
+        min-width: 350px;
         margin: 6px;
         margin-bottom: 12px; } }
     #container .post img {
@@ -131,12 +134,20 @@ html {
       margin: 0px;
       color: #b0b0b0; }
     #container .post h3 {
+      line-height: 40px;
+      max-height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
       padding-bottom: 0px;
       margin: 0px;
       color: #333;
       font-family: 'Oswald';
       font-size: 28px;
       font-weight: normal; }
+    #container .post p {
+      line-height: 1.2em;
+      max-height: 4.8em;
+      overflow: hidden; }
   @media only screen and (min-width: 900px) {
     #container .post:hover {
       border: 6px solid #ee7700; } }

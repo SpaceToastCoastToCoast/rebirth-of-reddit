@@ -119,6 +119,7 @@ html {
 #container {
   position: relative;
   top: 80px;
+  width: 100%;
   margin: auto;
   text-align: center;
   .post {
@@ -130,6 +131,7 @@ html {
     padding: 18px;
     border: 6px solid $header-color;
     margin: 0px;
+    width: 90%;
     margin-bottom: 12px;
     box-shadow: 0px 4px 16px $post-shadow-color;
     @media #{$medium-query} {
@@ -138,7 +140,8 @@ html {
       margin-bottom: 12px;
     }
     @media #{$large-query} {
-      width: 350px;
+      width: 30%;
+      min-width: 350px;
       margin: 6px;
       margin-bottom: 12px;
     }
@@ -152,12 +155,21 @@ html {
       color: $light-color;
     }
     h3 {
+      line-height: 40px;
+      max-height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
       padding-bottom: 0px;
       margin: 0px;
       color: $dark-color;
       font-family: 'Oswald';
       font-size: 28px;
       font-weight: normal;
+    }
+    p {
+      line-height: 1.2em;
+      max-height: 4.8em;
+      overflow: hidden;
     }
   }
   .post:hover {
