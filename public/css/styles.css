@@ -105,6 +105,7 @@ html {
   #container .post {
     text-align: left;
     display: inline-block;
+    vertical-align: top;
     position: relative;
     background-color: #fefefe;
     padding: 18px;
