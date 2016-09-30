@@ -100,7 +100,7 @@ html {
   top: 80px;
   width: 95%;
   margin: auto;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   text-align: center; }
   #container .post {
     text-align: left;
@@ -125,6 +125,8 @@ html {
         min-width: 350px;
         margin: 6px;
         margin-bottom: 12px; } }
+    #container .post a {
+      text-decoration: none; }
     #container .post img {
       width: 100%;
       padding-bottom: 8px; }

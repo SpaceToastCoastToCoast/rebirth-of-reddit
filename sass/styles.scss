@@ -121,7 +121,7 @@ html {
   top: 80px;
   width: 95%;
   margin: auto;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   text-align: center;
   .post {
     text-align: left;
@@ -145,6 +145,9 @@ html {
       min-width: 350px;
       margin: 6px;
       margin-bottom: 12px;
+    }
+    a {
+      text-decoration: none;
     }
     img {
       width: 100%;

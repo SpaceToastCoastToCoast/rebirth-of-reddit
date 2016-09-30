@@ -23,20 +23,22 @@
       const items = this.posts.map(function(post) {
         let newPost = document.createElement("div");
         newPost.className = "post";
-        let img = document.createElement("img");
         let aTag = document.createElement("a");
         aTag.setAttribute('href', 'http://www.reddit.com' + post.data.permalink);
-        img.src = post.data.thumbnail;
-        aTag.appendChild(img);
+        if(post.data.thumbnail.length > 8) {
+          let img = document.createElement("img");
+          img.src = post.data.thumbnail;
+          aTag.appendChild(img);
+        }
         let title = document.createElement("h3");
         title.innerHTML = post.data.title;
+        aTag.appendChild(title);
         let postInfo = document.createElement("span");
         postInfo.className = "postInfo";
         postInfo.innerHTML = "by " + post.data.author + " : " + post.data.ups + " upvotes";
         let postBody = document.createElement("p");
         postBody.innerHTML = post.data.selftext;
         newPost.appendChild(aTag);
-        newPost.appendChild(title);
         newPost.appendChild(postInfo);
         newPost.appendChild(postBody);
         return newPost;
@@ -72,17 +74,20 @@
         let img = document.createElement("img");
         let aTag = document.createElement("a");
         aTag.setAttribute('href', 'http://www.reddit.com' + post.data.permalink);
-        img.src = post.data.thumbnail;
-        aTag.appendChild(img);
+        if(post.data.thumbnail.length > 8) {
+          let img = document.createElement("img");
+          img.src = post.data.thumbnail;
+          aTag.appendChild(img);
+        }
         let title = document.createElement("h3");
         title.innerHTML = post.data.title;
+        aTag.appendChild(title);
         let postInfo = document.createElement("span");
         postInfo.className = "postInfo";
         postInfo.innerHTML = "by " + post.data.author + " : " + post.data.ups + " upvotes";
         let postBody = document.createElement("p");
         postBody.innerHTML = post.data.selftext;
         newPost.appendChild(aTag);
-        newPost.appendChild(title);
         newPost.appendChild(postInfo);
         newPost.appendChild(postBody);
         return newPost;
@@ -118,17 +123,20 @@
         let img = document.createElement("img");
         let aTag = document.createElement("a");
         aTag.setAttribute('href', 'http://www.reddit.com' + post.data.permalink);
-        img.src = post.data.thumbnail;
-        aTag.appendChild(img);
+        if(post.data.thumbnail.length > 8) {
+          let img = document.createElement("img");
+          img.src = post.data.thumbnail;
+          aTag.appendChild(img);
+        }
         let title = document.createElement("h3");
         title.innerHTML = post.data.title;
+        aTag.appendChild(title);
         let postInfo = document.createElement("span");
         postInfo.className = "postInfo";
         postInfo.innerHTML = "by " + post.data.author + " : " + post.data.ups + " upvotes";
         let postBody = document.createElement("p");
         postBody.innerHTML = post.data.selftext;
         newPost.appendChild(aTag);
-        newPost.appendChild(title);
         newPost.appendChild(postInfo);
         newPost.appendChild(postBody);
         return newPost;
