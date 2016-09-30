@@ -68,16 +68,12 @@ html {
   margin: -8px; }
   #nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333; }
-    @media only screen and (min-width: 600px) and (max-width: 899px) {
-      #nav ul {
-        text-align: center; } }
-    @media only screen and (min-width: 900px) {
-      #nav ul {
-        text-align: center; } }
     #nav ul li {
       color: #b0b0b0;
       display: inline-block;
@@ -93,6 +89,8 @@ html {
         #nav ul li {
           width: 80px;
           border: none; } }
+    #nav ul li#random {
+      border-left: none; }
     @media only screen and (min-width: 900px) {
       #nav ul li:hover {
         color: #ee7700; } }
@@ -100,8 +98,9 @@ html {
 #container {
   position: relative;
   top: 80px;
-  width: 100%;
+  width: 95%;
   margin: auto;
+  margin-bottom: 32px;
   text-align: center; }
   #container .post {
     text-align: left;
@@ -151,3 +150,22 @@ html {
   @media only screen and (min-width: 900px) {
     #container .post:hover {
       border: 6px solid #ee7700; } }
+
+#footer {
+  margin: -8px;
+  padding: 0px;
+  border: 8px solid #333;
+  border-top: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  position: relative;
+  top: 48px;
+  bottom: 0px;
+  height: 40px;
+  box-shadow: 0px 4px 16px #664444; }
+  #footer img {
+    margin-top: 0px;
+    margin-left: 4px;
+    margin-right: 4px; }

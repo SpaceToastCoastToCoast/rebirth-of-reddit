@@ -4,7 +4,7 @@ var connect = require('gulp-connect');
 
 gulp.task('connect', function(){
   connect.server({
-    root: 'public',
+    root: '.',
     livereload: true
   });
 });
@@ -13,7 +13,7 @@ gulp.task('connect', function(){
 gulp.task('sass', function () {
   return gulp.src('./sass/*.scss')
       .pipe(sass({ errLogToConsole: true }))
-      .pipe(gulp.dest('./public/css'));
+      .pipe(gulp.dest('./css'));
 });
 
 gulp.task('livereload', function (){
